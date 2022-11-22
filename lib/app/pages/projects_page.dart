@@ -1,29 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:jorge_portafolio/app/pages/mobile/projects_page/projects_page_mobile.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class ProjectsPage extends StatefulWidget {
+  const ProjectsPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ProjectsPage> createState() => _ProjectsPageState();
 }
 
-class _HomePageState extends State<HomePage> {
-
-  @override
-  void initState() {
-    FlutterNativeSplash.remove();
-    super.initState();
-  }
+class _ProjectsPageState extends State<ProjectsPage> {
 
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => Container(color:Colors.blue),
+      mobile: (BuildContext context) => const ProjectsPageMobile(),
       tablet: (BuildContext context) => Container(color:Colors.yellow),
       desktop: (BuildContext context) => Container(color:Colors.red),
       watch: (BuildContext context) => Container(color:Colors.purple),
     );
   }
+
 }
