@@ -23,5 +23,15 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-
   uses-material-design: true
+
+  assets:
+    - assets/png/
+
+flutter_native_splash:
+  color: "#000000"
+  image: assets/png/logo.png
+
+  android: true
+  ios: true
+  web: true
