@@ -15,7 +15,7 @@ class _ServicesPageState extends State<ServicesPage> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => const ServicesPageMobile(),
-      tablet: (BuildContext context) => Container(color:Colors.yellow),
+      tablet: (BuildContext context) => const ServicesPageMobile(),
       desktop: (BuildContext context) => Container(color:Colors.red),
       watch: (BuildContext context) => Container(color:Colors.purple),
     );

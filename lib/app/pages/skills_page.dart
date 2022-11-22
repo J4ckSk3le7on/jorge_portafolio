@@ -15,7 +15,7 @@ class _SkillsPageState extends State<SkillsPage> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => const SkillsPageMobile(),
-      tablet: (BuildContext context) => Container(color:Colors.yellow),
+      tablet: (BuildContext context) => const SkillsPageMobile(),
       desktop: (BuildContext context) => Container(color:Colors.red),
       watch: (BuildContext context) => Container(color:Colors.purple),
     );

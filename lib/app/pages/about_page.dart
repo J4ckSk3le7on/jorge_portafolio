@@ -15,7 +15,7 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => const AboutPageMobile(),
-      tablet: (BuildContext context) => Container(color:Colors.yellow),
+      tablet: (BuildContext context) => const AboutPageMobile(),
       desktop: (BuildContext context) => Container(color:Colors.red),
       watch: (BuildContext context) => Container(color:Colors.purple),
     );
